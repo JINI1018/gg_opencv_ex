@@ -1,4 +1,4 @@
-import cv2 
+import cv2
 
 print("OpenCV version:")  # 안내 문구 출력
 print(cv2.__version__)  # 설치된 OpenCV 버전 확인
@@ -17,14 +17,14 @@ print("Pixel at (0, 0) - Red: {}, Green: {}, Blue: {}".format(r,
 g, b))  # 해당 픽셀의 R, G, B 값 출력
 
 # 키 입력이 있을 때까지 대기
-cv2.waitKey(0)  
+cv2.waitKey(0)
 
 # 세로 50~100, 가로 200~400 : px의 절대적 위치
 dot = img[50:100, 200:400]  # 이미지에서 [y 50~100, x 200~400] 영역만 잘라내기(슬라이싱)
 cv2.imshow("Dot", dot)  # 잘라낸 영역을 "Dot" 창에 표시
 
 # 키 입력이 있을 때까지 대기
-cv2.waitKey(0)  
+cv2.waitKey(0)
 
 #(b, g, r)
 img[50:100, 200:400] = (255, 0, 0)  # 해당 영역을 파란색(B=255)으로 채우기
